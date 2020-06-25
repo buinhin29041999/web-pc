@@ -21,7 +21,10 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<div class="alert alert-${alert}">${message}</div>
+				<c:if test="${not empty message }">
+					<div class="alert alert-${alert}">${message}</div>
+				</c:if>
+
 
 				<form action="<c:url value='/dang-nhap'/>" id="formLogin"
 					method="post">

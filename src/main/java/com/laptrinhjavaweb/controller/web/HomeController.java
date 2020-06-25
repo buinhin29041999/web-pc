@@ -47,7 +47,7 @@ public class HomeController extends HttpServlet {
 			String message = request.getParameter("message");
 			if (alert != null && message != null) {
 				request.setAttribute("alert", alert);
-				request.setAttribute("message", bundle.getString("invalid_user_or_password"));
+				request.setAttribute("message", bundle.getString(message));
 			}
 			RequestDispatcher rd = request.getRequestDispatcher("/views/login.jsp");
 			rd.forward(request, response);
