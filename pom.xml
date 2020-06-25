@@ -14,7 +14,7 @@
 		<mysql.version>8.0.13</mysql.version>
 		<weld.servlet.version>1.1.0.Final</weld.servlet.version>
 		<json.core.version>2.6.3</json.core.version>
-		<json.datablind.version>2.6.3</json.datablind.version>
+		<json.datablind.version>2.9.10.5</json.datablind.version>
 		<json.annoutation.version>2.6.3</json.annoutation.version>
 		<json.mapper.version>1.9.13</json.mapper.version>
 		<jackson.core.version>1.9.13</jackson.core.version>
