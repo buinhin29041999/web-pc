@@ -18,7 +18,7 @@
 		<json.annoutation.version>2.6.3</json.annoutation.version>
 		<json.mapper.version>1.9.13</json.mapper.version>
 		<jackson.core.version>1.9.13</jackson.core.version>
-		<beanUtils.version>1.9.3</beanUtils.version>
+		<beanUtils.version>1.9.4</beanUtils.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
