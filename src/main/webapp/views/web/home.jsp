@@ -10,6 +10,34 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+			<div class="col-md-9">	
+				<div class="row">
+					<c:forEach var="item" items="${model.listResult}">
+						<div class="col-lg-4 col-md-6 mb-4">
+							<div class="card h-100">								
+								<a href="<c:url value='/item?spId=${item.id}'/>"><img class="card-img-top"
+										src="<c:url value='/resources/pc_image/${item.thumbnail}'/>"></a>
+								<div class="card-body">
+									<h4 class="card-title">
+										<a href="<c:url value='/item?spId=${item.id}'/>">${item.name}</a>
+									</h4>
+									<h5>${item.donGia}đ</h5>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">&#9733; &#9733; &#9733;
+										&#9733; &#9734;</small>
+								</div>
+							</div>
+						</div>
+					</c:forEach>
+
+				</div>
+
+				
+			</div>
+			<!-- /.col-lg-9 -->
+=======
 	<div class="col-lg-9">
 
 		<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -71,6 +99,7 @@
 	</div>
 	<!-- /.col-lg-9 -->
 
+>>>>>>> master
 </body>
 
 </html>
