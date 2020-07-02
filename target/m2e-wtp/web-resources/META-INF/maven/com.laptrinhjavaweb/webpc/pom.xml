@@ -11,7 +11,7 @@
 		<jsp.api.version>2.0</jsp.api.version>
 		<jstl.version>1.2</jstl.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
-		<mysql.version>8.0.19</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 		<weld.servlet.version>1.1.0.Final</weld.servlet.version>
 		<json.core.version>2.6.3</json.core.version>
 		<json.datablind.version>2.9.10.5</json.datablind.version>
