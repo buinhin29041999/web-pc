@@ -11,29 +11,24 @@
 <link
 	href="<c:url value='/library/web/vendor/bootstrap/css/bootstrap.min.css'/>"
 	rel="stylesheet" type="text/css">
-<link
-	href="<c:url value='/library/web/css/all.css'/>"
-	rel="stylesheet" type="text/css">
+<link href="<c:url value='/library/web/css/all.css'/>" rel="stylesheet"
+	type="text/css">
 <script src='<c:url value='/library/paging/jquery.twbsPagination.js'/>'
 	type="text/javascript"></script>
 <!-- Custom styles for trang chu  -->
 
 <link href="<c:url value='/library/web/css/shop-homepage.css'/>"
 	rel="stylesheet" type="text/css">
-
-<!-- Custom style cho cac trang item -->
-<link href="<c:url value='/library/web/css/shop-item.css'/>"
-	rel="stylesheet" type="text/css">
 </head>
-<body>
-<%@ include file="/common/web/header.jsp"%>
-<div class="container">
+<body style="background-color: rgba(0, 0, 0, 0.1);">
+	<%@ include file="/common/web/header.jsp"%>
+	<%@ include file="/common/web/slide.jsp"%>
+	<div class="container-fluid">
 		<div class="row">
-	<%@ include file="/common/web/menu.jsp"%>
-	
-	<dec:body />
-	
-</div></div>
+			<%@ include file="/common/web/menu.jsp"%>			
+			<dec:body />
+		</div>
+	</div>
 	<%@ include file="/common/web/footer.jsp"%>
 
 	<!-- Bootstrap core JavaScript -->

@@ -12,7 +12,7 @@
 	href="<c:url value='/library/admin/vendor/fontawesome-free/css/all.min.css'/>"
 	rel="stylesheet" type="text/css">
 <link
-	href="<c:url value='/library/admin/vendor/bootstrap/js/bootstrap.min.css'/>"
+	href="<c:url value='/library/admin/vendor/bootstrap/js/bootstrap.css'/>"
 	rel="stylesheet">
 <!-- Page level plugin CSS-->
 
@@ -22,6 +22,8 @@
 <!-- Custom styles for this template-->
 
 <link href="<c:url value='/library/admin/css/sb-admin.css'/>"
+	rel="stylesheet" type="text/css">
+	<link href="<c:url value='/library/admin/css/modifyItem.css'/>"
 	rel="stylesheet" type="text/css">
 </head>
 <body id="page-top">
@@ -55,11 +57,8 @@
 	<!-- Custom scripts for all pages-->
 
 	<script src="<c:url value='/library/admin/js/sb-admin.min.js'/>"></script>
-	<!-- Demo scripts for this page-->
-
+	<!-- CKeditor -->
 	<script
-		src="<c:url value='/library/admin/js/demo/datatables-demo.js'/>"></script>
-	<script
-		src="<c:url value='/library/admin/js/demo/chart-area-demo.js'/>"></script>
+		src="<c:url value='ckeditor/ckeditor.js'/>"></script>
 </body>
 </html>
