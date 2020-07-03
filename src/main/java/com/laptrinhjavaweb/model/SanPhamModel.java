@@ -9,7 +9,7 @@ public class SanPhamModel extends AbstractModel<SanPhamModel> {
 	private Integer soLuong;
 	private Long categoryId;
 	private Long nhaCungCapId;
-	
+	private String categoryCode;
 
 
 	public String getName() {

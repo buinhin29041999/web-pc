@@ -19,6 +19,15 @@ public abstract class AbstractModel<T> {
 	private Integer totalItem;
 	private String sortname;
 	private String sortBy;
+	private String type;
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 	public String getSortname() {
 		return sortname;
 	}
