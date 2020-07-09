@@ -23,18 +23,21 @@
 
 <link href="<c:url value='/library/admin/css/sb-admin.css'/>"
 	rel="stylesheet" type="text/css">
-	<link href="<c:url value='/library/admin/css/modifyItem.css'/>"
+<link href="<c:url value='/library/admin/css/modifyItem.css'/>"
 	rel="stylesheet" type="text/css">
+<script
+	src="<c:url value='/library/admin/vendor/jquery/jquery.min.js'/>"></script>
+<script src="<c:url value='ckeditor/ckeditor.js'/>"></script>
 </head>
 <body id="page-top">
 	<%@ include file="/common/admin/header.jsp"%>
-
-	<dec:body />
-
-
+	<div id="wrapper">
+		<%@ include file="/common/admin/leftMenu.jsp"%>
+			<dec:body />
+		<%@ include file="/common/admin/footer.jsp"%>
+	</div>
 	<!-- Bootstrap core JavaScript-->
-	<script
-		src="<c:url value='/library/admin/vendor/jquery/jquery.min.js'/>"></script>
+
 
 	<script
 		src="<c:url value='/library/admin/vendor/bootstrap/js/bootstrap.bundle.min.js'/>"></script>
@@ -46,19 +49,12 @@
 
 	<script
 		src="<c:url value='/library/admin/vendor/jquery-easing/jquery.easing.min.js'/>"></script>
-	<!-- Page level plugin JavaScript-->
 
-	<script
-		src="<c:url value='/library/admin/vendor/chart.js/Chart.min.js'/>"></script>
-	<script
-		src="<c:url value='/library/admin/vendor/datatables/jquery.dataTables.js'/>"></script>
-	<script
-		src="<c:url value='/library/admin/vendor/datatables/dataTables.bootstrap4.js'/>"></script>
 	<!-- Custom scripts for all pages-->
 
 	<script src="<c:url value='/library/admin/js/sb-admin.min.js'/>"></script>
 	<!-- CKeditor -->
-	<script
-		src="<c:url value='ckeditor/ckeditor.js'/>"></script>
+
+
 </body>
 </html>

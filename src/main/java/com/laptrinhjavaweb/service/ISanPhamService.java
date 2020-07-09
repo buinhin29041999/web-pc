@@ -19,4 +19,5 @@ public interface ISanPhamService {
 
 	int getTotalItem();
 	List<SanPhamModel> findNewestSP(Integer sl);
+	SanPhamModel fineOne(Long id);
 }

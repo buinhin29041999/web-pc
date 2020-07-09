@@ -12,6 +12,14 @@ public class SanPhamModel extends AbstractModel<SanPhamModel> {
 	private String categoryCode;
 
 
+	public String getCategoryCode() {
+		return categoryCode;
+	}
+
+	public void setCategoryCode(String categoryCode) {
+		this.categoryCode = categoryCode;
+	}
+
 	public String getName() {
 		return name;
 	}

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.laptrinhjavaweb.model.CategoryModel;
 import com.laptrinhjavaweb.model.SanPhamModel;
 import com.laptrinhjavaweb.service.ISanPhamService;
+import com.laptrinhjavaweb.utils.FormUtil;
 
 import constant.SystemConst;
 
@@ -25,9 +26,9 @@ public class HomeController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		SanPhamModel model = new SanPhamModel();		
-		model.setListResult(spService.findAll(null, null,null));
-		request.setAttribute(SystemConst.MODEL, model);
+//		SanPhamModel model = FormUtil.toModel(SanPhamModel.class, request);	
+//		model.setListResult(spService.findAll(null, null,null));
+//		request.setAttribute(SystemConst.MODEL, model);
 		RequestDispatcher rd = request.getRequestDispatcher("/views/admin/home.jsp");
 		rd.forward(request, response);
 	}

@@ -10,10 +10,8 @@ public interface ISanPhamDAO extends GenericsDAO<SanPhamModel> {
 	List<SanPhamModel> findByCategoryId(Long categoryid);
 	Long save(SanPhamModel sp);
 	void update(SanPhamModel sp);
-	void selectByCategoryId(SanPhamModel sp);
 	void delete(Long id);
-	List<SanPhamModel> findAll(Pageble pageble, Integer cateId, Integer spId);
-	
+	List<SanPhamModel> findAll(Pageble pageble, Integer cateId, Integer spId);	
 	int getTotalItem();
 	List<SanPhamModel> findNewestSP(Integer sl);
 }

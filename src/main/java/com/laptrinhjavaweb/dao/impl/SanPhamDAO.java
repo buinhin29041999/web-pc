@@ -30,7 +30,7 @@ public class SanPhamDAO extends AbstractDAO<SanPhamModel> implements ISanPhamDAO
 
 	}
 
-	// Xóa sản phẩm theo id
+	// Update
 	@Override
 	public void update(SanPhamModel sp) {
 		StringBuilder sql = new StringBuilder("UPDATE san_pham SET name = ?, categoryid = ?, nha_cung_cap_id = ?,");
@@ -39,13 +39,6 @@ public class SanPhamDAO extends AbstractDAO<SanPhamModel> implements ISanPhamDAO
 		update(sql.toString(), sp.getName(), sp.getCategoryId(), sp.getNhaCungCapId(), sp.getShortDescription(),
 				sp.getThumbnail(), sp.getContext(), sp.getDonGia(), sp.getSoLuong(), sp.getCreatedDate(),
 				sp.getCreatedBy(), sp.getModifiedDate(), sp.getModifiedBy(), sp.getId());
-
-	}
-
-	@Override
-	public void selectByCategoryId(SanPhamModel sp) {
-		String sql = "SELECT * FROM san_pham WHERE categoryid=?";
-		this.update(sql, sp.getCategoryId());
 
 	}
 
