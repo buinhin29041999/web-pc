@@ -1,44 +1,50 @@
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\mapper\SanPhamMapper.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\controller\admin\HomeController.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\impl\CategoryService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\LienHeModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\impl\UserService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\controller\web\ItemController.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\CommentModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\SanPhamModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\UserModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\GenericsDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\impl\UserDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\HoaDonModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\impl\SanPhamService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\MenuModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\ISanPhamDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\paging\Pageble.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\Sort\Sorter.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\IUserDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\VaiTroModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\controller\web\SanPhamController.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\impl\AbstractDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\utils\FormUtil.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\controller\web\HomeController.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\impl\SanPhamDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\ISanPhamService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\IHomService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\mapper\UserMapper.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\constant\SystemConst.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\CategoryModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\Filter\Authorization.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\ICategoryDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\impl\HomeService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\controller\admin\api\SanphamAPI.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\paging\PageRequest.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\utils\SessionUtil.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\dao\impl\CategoryDAO.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\NhaCungCapModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\utils\HttpUtil.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\AbstractModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\model\QuangCaoModel.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\IUserService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\mapper\RowMapper.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\service\ICategoryService.java
-C:\Users\Hoang Phuong\Documents\webpc\src\main\java\com\laptrinhjavaweb\mapper\CategoryMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\mapper\ProductMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\RoleModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\web\BlankController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\impl\BrandService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\paging\PageRequest.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\mapper\CategoryMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\utils\SessionUtil.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\paging\Pageble.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\impl\BrandDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\admin\HomeController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\web\HomeController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\IUserService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\utils\FormUtil.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\web\DetailProductController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\impl\ProductService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\admin\ProductController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\CategoryModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\ICategoryDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\admin\api\ProductAPI.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\impl\AbstractDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\admin\UploadImage.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\AbstractModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\impl\CategoryService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\mapper\BrandMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\web\CheckoutController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\impl\UserService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\IProductService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\impl\ProductDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\Sort\Sorter.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\GenericsDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\IProductDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\impl\CategoryDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\impl\UserDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\UserModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\CommentModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\IHomService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\mapper\UserMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\IBrandDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\mapper\RowMapper.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\BrandModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\IBrandService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\controller\web\ProductController.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\dao\IUserDAO.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\Filter\Authorization.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\constant\SystemConst.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\utils\HttpUtil.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\BillModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\model\ProductModel.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\impl\HomeService.java
+C:\Users\HoangPhuong\Documents\webpc\src\main\java\service\ICategoryService.java
