@@ -27,12 +27,22 @@
 				</div>
 			</div>
 
-			<form id="UploadImage" method="post"
-				action="<c:url value="/uploadImage"/>"
-				enctype="multipart/form-data">
+			<form id="formSub" enctype="multipart/form-data">
 				<div class="row">
-					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<img src="https://placehold.it/240x240" id="img-upload"
+							class="img-thumbnail"
+							style="margin-top: 80px; margin-left: 50px; width: 100%">
+					</div>
 					<div class="col-md-8">
+						<div class="row mt30">
+							<label class="col-sm-3 control-label text-right">Name</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="name" name="name"
+									value="${model.name}" />
+							</div>
+						</div>
+						
 						<div class="row mt30">
 							<label class="col-sm-3 control-label text-right">Image</label>
 							<div class="col-sm-9">
@@ -49,26 +59,6 @@
 
 							</div>
 						</div>
-					</div>
-				</div>
-			</form>
-
-			<form id="formSub">
-				<div class="row">
-					<div class="col-md-4">
-						<img src="https://placehold.it/240x240" id="img-upload"
-							class="img-thumbnail"
-							style="margin-top: 80px; margin-left: 50px; width: 100%">
-					</div>
-					<div class="col-md-8">
-						<div class="row mt30">
-							<label class="col-sm-3 control-label text-right">Name</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" id="name" name="name"
-									value="${model.name}" />
-							</div>
-						</div>
-
 
 						<div class="row mt30">
 							<label class="col-sm-3 control-label text-right">Short
@@ -176,8 +166,7 @@
 	</div>
 
 	<script>
-		$('#btnAccept').click(function(e) {
-			//$("#UploadImage").submit();
+		$('#btnAccept').click(function(e) {			
 			e.preventDefault();
 			var data = {};
 			var x = $("form").serializeArray();

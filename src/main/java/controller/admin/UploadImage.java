@@ -16,25 +16,18 @@ import java.io.IOException;
 		maxRequestSize = 1024 * 1024 * 50) // 50MB
 public class UploadImage extends HttpServlet {
 
-	private static final long serialVersionUID = 2686801510274002166L;
-	/**
-	 * Name of the directory where uploaded files will be saved, relative to the web
-	 * application directory.
-	 */
-	private static final String SAVE_DIR = "resources";
+	private static final long serialVersionUID = 2686801510274002166L;	
+	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-
-		// constructs path of the directory to save uploaded file
-		String savePath = this.getFolderUpload().getAbsolutePath() + File.separator + SAVE_DIR;
+			throws ServletException, IOException {	
 
 		for (Part part : request.getParts()) {
 			String fileName = extractFileName(part);
 
 			// refines the fileName in case it is an absolute path
 			fileName = new File(fileName).getName();
-			part.write(savePath + File.separator + fileName);
+	//		part.write(savePath + File.separator + fileName);
 		}
 		response.sendRedirect(request.getContextPath() + "/admin-item?type=list");
 	}
@@ -50,11 +43,5 @@ public class UploadImage extends HttpServlet {
 		return "";
 	}
 
-	public File getFolderUpload() {
-		File folderUpload = new File(System.getProperty("user.home") + "/Documents/webpc/src/main/webapp");
-		if (!folderUpload.exists()) {
-			folderUpload.mkdirs();
-		}
-		return folderUpload;
-	}
+	
 }

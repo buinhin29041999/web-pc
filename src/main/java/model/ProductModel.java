@@ -2,7 +2,7 @@ package model;
 
 public class ProductModel extends AbstractModel<ProductModel> {
     private String name;
-    private String thumbnail;
+    private String image;
     private String shortDescription;
     private String content;
     private Integer price;
@@ -25,17 +25,17 @@ public class ProductModel extends AbstractModel<ProductModel> {
 
     public void setName(String name) {
         this.name = name;
-    }
+    }    
 
-    public String getThumbnail() {
-        return thumbnail;
-    }
+    public String getImage() {
+		return image;
+	}
 
-    public void setThumbnail(String thumbnail) {
-        this.thumbnail = thumbnail;
-    }
+	public void setImage(String image) {
+		this.image = image;
+	}
 
-    public String getShortDescription() {
+	public String getShortDescription() {
         return shortDescription;
     }
 

@@ -29,9 +29,9 @@ public class ProductDAO extends AbstractDAO<ProductModel> implements IProductDAO
     public Long save(ProductModel sp) {
         StringBuilder sql = new StringBuilder("INSERT INTO Product(name,categoryId, ");
         sql.append(
-                "thumbnail,shortDescription,content,price,amount,createdDate,createdBy,brandId,modifiedDate,modifiedBy)");
+                "image,shortDescription,content,price,amount,createdDate,createdBy,brandId,modifiedDate,modifiedBy)");
         sql.append("VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
-        return insert(sql.toString(), sp.getName(), sp.getCategoryId(), sp.getThumbnail(), sp.getShortDescription(),
+        return insert(sql.toString(), sp.getName(), sp.getCategoryId(), sp.getImage(), sp.getShortDescription(),
                 sp.getContent(), sp.getPrice(), sp.getAmount(), sp.getCreatedDate(), sp.getCreatedBy(), sp.getBrandId(),
                 sp.getModifiedDate(), sp.getModifiedBy());
 
@@ -41,10 +41,10 @@ public class ProductDAO extends AbstractDAO<ProductModel> implements IProductDAO
     @Override
     public void update(ProductModel sp) {
         StringBuilder sql = new StringBuilder("UPDATE Product SET name = ?, categoryId = ?, brandId = ?,");
-        sql.append("shortDescription = ? ,thumbnail = ?, content = ?, price = ?, amount = ?,");
+        sql.append("shortDescription = ? ,image = ?, content = ?, price = ?, amount = ?,");
         sql.append("createdDate = ?, createdBy = ?, modifiedDate = ?, modifiedBy = ? WHERE id = ? ");
         update(sql.toString(), sp.getName(), sp.getCategoryId(), sp.getBrandId(), sp.getShortDescription(),
-                sp.getThumbnail(), sp.getContent(), sp.getPrice(), sp.getAmount(), sp.getCreatedDate(),
+                sp.getImage(), sp.getContent(), sp.getPrice(), sp.getAmount(), sp.getCreatedDate(),
                 sp.getCreatedBy(), sp.getModifiedDate(), sp.getModifiedBy(), sp.getId());
 
     }

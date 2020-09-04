@@ -1,31 +1,38 @@
 package controller.admin.api;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.io.IOException;
+
+
+import javax.inject.Inject;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 import model.ProductModel;
 import model.UserModel;
 import service.IProductService;
 import utils.HttpUtil;
 import utils.SessionUtil;
 
-import javax.inject.Inject;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.Part;
-
-import java.io.File;
-import java.io.IOException;
-
 @WebServlet(urlPatterns = { "/api-admin-product" })
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
+maxFileSize = 1024 * 1024 * 50, // 50MB
+maxRequestSize = 1024 * 1024 * 50) // 50MB
 public class ProductAPI extends HttpServlet {
 
 	@Inject
 	private IProductService productService;
 
 	private static final long serialVersionUID = -5974394312796154954L;
-	private static final String SAVE_DIR = "resources";
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -33,16 +40,10 @@ public class ProductAPI extends HttpServlet {
 		response.setContentType("application/json");
 		ProductModel spModel = HttpUtil.of(request.getReader()).toModel(ProductModel.class);
 		spModel.setCreatedBy(((UserModel) SessionUtil.getInstance().getValue(request, "USERMODEL")).getUserName());
+		
+		
+	//	spModel.setImage("data:image/png;base64,"+StringUtils.newStringUtf8(Base64.encodeBase64(newsAvatar.getBytes(),false)));
 
-		/*
-		 * // Save image to server String savePath =
-		 * this.getFolderUpload().getAbsolutePath() + File.separator + SAVE_DIR; for
-		 * (Part part : request.getParts()) { String fileName = extractFileName(part);
-		 * 
-		 * // refines the fileName in case it is an absolute path fileName = new
-		 * File(fileName).getName(); part.write(savePath + File.separator + fileName);
-		 * spModel.setThumbnail(fileName); }
-		 */
 		spModel = productService.save(spModel);
 		ObjectMapper mapper = new ObjectMapper();
 		// Chuyển string > json
@@ -68,25 +69,6 @@ public class ProductAPI extends HttpServlet {
 		ProductModel sp = HttpUtil.of(request.getReader()).toModel(ProductModel.class);
 		productService.delete(sp.getIds());
 		mapper.writeValue(response.getOutputStream(), "{}");
-	}
-
-	private String extractFileName(Part part) {
-		String contentDisp = part.getHeader("content-disposition");
-		String[] items = contentDisp.split(";");
-		for (String s : items) {
-			if (s.trim().startsWith("filename")) {
-				return s.substring(s.indexOf("=") + 2, s.length() - 1);
-			}
-		}
-		return "";
-	}
-
-	public File getFolderUpload() {
-		File folderUpload = new File(System.getProperty("user.home") + "/Documents/webpc/src/main/webapp");
-		if (!folderUpload.exists()) {
-			folderUpload.mkdirs();
-		}
-		return folderUpload;
-	}
+	}	
 
 }
