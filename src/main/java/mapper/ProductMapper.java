@@ -20,6 +20,7 @@ public class ProductMapper implements RowMapper<ProductModel> {
             sanpham.setContent(rSet.getString("content"));
             sanpham.setPrice(rSet.getInt("price"));
             sanpham.setAmount(rSet.getInt("amount"));
+            sanpham.setSale(rSet.getInt("sale"));
             sanpham.setCreatedDate(rSet.getTimestamp("createdDate"));
             sanpham.setCreatedBy(rSet.getString("createdBy"));
             sanpham.setModifiedDate(rSet.getTimestamp("modifiedDate"));

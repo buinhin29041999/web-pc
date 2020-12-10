@@ -19,8 +19,16 @@ public abstract class AbstractModel<T> {
     private String sortname;
     private String sortBy;
     private String type;
+    private String find;
+    public String getFind() {
+		return find;
+	}
 
-    public String getType() {
+	public void setFind(String find) {
+		this.find = find;
+	}
+
+	public String getType() {
         return type;
     }
 

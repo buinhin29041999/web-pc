@@ -42,7 +42,7 @@
 
                 <!-- Search -->
                 <div class="header-search">
-                    <form id="formSub" action="<c:url value="/product"/>" method="get">
+                    <form id="formSub" action="<c:url value="/product?find=Search"/>" method="get">
                         <input class="input search-input" type="text" placeholder="Điền từ khóa cần tìm" id="name"
                                name="name">
                         <select class="input search-categories" id="cbSearch">
@@ -52,6 +52,7 @@
                             </c:forEach>
                         </select>
                         <input type="hidden" value="" id="categoryId" name="categoryId"/>
+                        <input type="hidden" value="" id="find" name="find"/>
                         <button class="search-btn" type="submit" form="formSub"
                                 id="searchBtn">
                             <i class="fa fa-search"></i>
@@ -160,8 +161,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $("#searchBtn").click(function (e) {
-            /* $("#formSub").submit(); */
+        $("#searchBtn").click(function (e) {            
             if ($('#name').val() == "") {
                 alert("Hãy điền từ khóa cần tìm!");
                 e.preventDefault();
@@ -170,6 +170,7 @@
             var e = document.getElementById("cbSearch");
             var strUser = e.options[e.selectedIndex].value;
             $('#categoryId').val(strUser);
+            $('#find').val("Search");
         });
     });
 

@@ -2,9 +2,11 @@ package controller.admin.api;
 
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-
+import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -70,5 +72,18 @@ public class ProductAPI extends HttpServlet {
 		productService.delete(sp.getIds());
 		mapper.writeValue(response.getOutputStream(), "{}");
 	}	
-
+	
+	/*
+	 * public static String encodeToString(BufferedImage image, String type) {
+	 * String imageString = null; ByteArrayOutputStream bos = new
+	 * ByteArrayOutputStream();
+	 * 
+	 * try { ImageIO.write(image, type, bos); byte[] imageBytes = bos.toByteArray();
+	 * 
+	 * BASE64Encoder encoder = new BASE64Encoder(); imageString =
+	 * encoder.encode(imageBytes);
+	 * 
+	 * bos.close(); } catch (IOException e) { e.printStackTrace(); } return
+	 * imageString; }
+	 */
 }

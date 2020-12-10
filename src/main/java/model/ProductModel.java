@@ -7,6 +7,7 @@ public class ProductModel extends AbstractModel<ProductModel> {
     private String content;
     private Integer price;
     private Integer amount;
+    private Integer sale;
     private Long categoryId;
     private Long brandId;
     private String categoryCode;
@@ -15,7 +16,15 @@ public class ProductModel extends AbstractModel<ProductModel> {
         return categoryCode;
     }
 
-    public void setCategoryCode(String categoryCode) {
+    public Integer getSale() {
+		return sale;
+	}
+
+	public void setSale(Integer sale) {
+		this.sale = sale;
+	}
+
+	public void setCategoryCode(String categoryCode) {
         this.categoryCode = categoryCode;
     }
 

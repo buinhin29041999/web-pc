@@ -199,7 +199,7 @@
         <!-- /row -->
     </div>
     <!-- /container -->
-</div>
+    </div>
 <!-- /section -->
 </body>
 </html>

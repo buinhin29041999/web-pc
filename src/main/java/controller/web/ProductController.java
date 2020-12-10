@@ -28,7 +28,7 @@ public class ProductController extends HttpServlet {
             throws ServletException, IOException {
 
         ProductModel model = FormUtil.toModel(ProductModel.class, request);
-        model.setListResult(productService.findByCateIdAndOrName(model.getCategoryId(), model.getName()));
+        model.setListResult(productService.findAllOrSearch(model.getFind(),model.getCategoryId(), model.getName(), model.getBrandId()));
 
         CategoryModel categoryModel = new CategoryModel();
         categoryModel.setListResult(categoryService.findAll());

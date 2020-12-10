@@ -28,36 +28,17 @@
             <!-- home slick -->
             <div id="home-slick">
                 <!-- banner -->
-                <div class="banner banner-1">
-                    <img src='<c:url value='/resources/image_slide/banner01.jpg'/>' alt="">
+                <c:forEach var="item" items="${banner.listResult}">
+                	<div class="banner banner-1">
+                    <img src='${item.image}' alt="">
                     <div class="banner-caption text-center">
-                        <h1>Giảm giá</h1>
-                        <h3 class="white-color font-weak">Lên tới 50%</h3>
+                        <!-- <h1>Giảm giá</h1>
+                        <h3 class="white-color font-weak">Lên tới 50%</h3> -->
                         <button class="primary-btn">Mua ngay</button>
                     </div>
                 </div>
-                <!-- /banner -->
-
-                <!-- banner -->
-                <div class="banner banner-1">
-                    <img src="<c:url value='/resources/image_slide/banner02.jpg'/>" alt="">
-                    <div class="banner-caption">
-                        <h1 class="primary-color">Giảm giá sốc<br><span class="white-color font-weak">Lên tới 50%</span>
-                        </h1>
-                        <button class="primary-btn">Mua ngay</button>
-                    </div>
-                </div>
-                <!-- /banner -->
-
-                <!-- banner -->
-                <div class="banner banner-1">
-                    <img src="<c:url value='/resources/image_slide/banner03.jpg'/>" alt="">
-                    <div class="banner-caption">
-                        <h1 class="white-color">Sản phẩm mới <span>Collection</span></h1>
-                        <button class="primary-btn">Mua ngay</button>
-                    </div>
-                </div>
-                <!-- /banner -->
+                </c:forEach>                
+                <!-- /banner -->              
             </div>
             <!-- /home slick -->
         </div>
@@ -79,34 +60,11 @@
                     <img src="<c:url value='/resources/banner/case_demo.jpg'/>" alt=""
                          style="height:300px;margin:0 auto;overflow:hidden;position:relative;width:360px;">
                     <div class="banner-caption text-center">
-                        <h2 class="white-color">Case chơi game</h2>
+                        <h2 class="white-color">Sản phẩm 1</h2>
                     </div>
                 </a>
             </div>
             <!-- /banner -->
-
-            <!-- banner -->
-            <div class="col-md-4 col-sm-6">
-                <a class="banner banner-1" href="#">
-                    <img src="<c:url value='/resources/image_slide/banner11.jpg'/>" alt="">
-                    <div class="banner-caption text-center">
-                        <h2 class="white-color">Sản phẩm 2</h2>
-                    </div>
-                </a>
-            </div>
-            <!-- /banner -->
-
-            <!-- banner -->
-            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
-                <a class="banner banner-1" href="#">
-                    <img src="<c:url value='/resources/image_slide/banner12.jpg'/>" alt="">
-                    <div class="banner-caption text-center">
-                        <h2 class="white-color">Sản phẩm 3</h2>
-                    </div>
-                </a>
-            </div>
-            <!-- /banner -->
-
         </div>
         <!-- /row -->
     </div>

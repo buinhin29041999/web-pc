@@ -8,7 +8,7 @@ import java.util.List;
 public interface IProductDAO extends GenericsDAO<ProductModel> {
     ProductModel findOne(Long id);
 
-    List<ProductModel> findByCateIdAndOrName(Long categoryid, String name);
+    List<ProductModel> findAllOrSearch(String type,Long categoryid, String name,Long brandId);
 
     Long save(ProductModel sp);
 

@@ -6,7 +6,7 @@ import paging.Pageble;
 import java.util.List;
 
 public interface IProductService {
-    List<ProductModel> findByCateIdAndOrName(Long categoryid, String name);
+    List<ProductModel> findAllOrSearch(String type, Long categoryid, String name, Long brandId);
 
     ProductModel save(ProductModel sp);
 
