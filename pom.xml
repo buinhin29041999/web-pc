@@ -121,10 +121,7 @@
 				</configuration>				
 				<executions>
 					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
+						<phase>package</phase>						
 						<configuration>
 							<artifactItems>
 								<artifactItem>
