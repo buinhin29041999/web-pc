@@ -118,7 +118,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-				</configuration>
+				</configuration>				
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -127,11 +127,10 @@
 						</goals>
 						<configuration>
 							<artifactItems>
-								<!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
 								<artifactItem>
 									<groupId>com.github.jsimone</groupId>
 									<artifactId>webapp-runner</artifactId>
-									<version>9.0.27.1</version>									
+									<version>8.0.30.2</version>
 									<destFileName>webapp-runner.jar</destFileName>
 								</artifactItem>
 							</artifactItems>
